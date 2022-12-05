@@ -78,6 +78,7 @@ Nucleotide_list = list(DNA_sequence)
 Index_2 = 1
 Index_3 = 2
 ORF = frame_reader(DNA_sequence)
+
 #Functions are called
 print ("Your reading frame is: ", ORF ,file=results)
 
