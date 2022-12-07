@@ -11,7 +11,7 @@ Core code:
 
 In Species_plotter a py kml compiler can be found. 
 This allows to plot species given coordinates and distance range. Distance is calculated using the coordinated provided. 
-    -Mammal.txt and output.kml are sample data. 
+    -Mammal.txt is the sample of input data and output.kml are output data given a set of coordinates. 
 
 Work in progress contains a series of projects currently in development. They might not work due to bugs, flawed logic, etc... 
 feel free to browse them and contribute. 
