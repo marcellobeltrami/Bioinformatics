@@ -88,7 +88,7 @@ def aminoacids (DNA):
 
     codon_sequence = []
 
-    print_aa_list = []
+    aa_list = []
 
     while index < Seq_len:
         Subs = slice(index, index_1)
@@ -103,11 +103,11 @@ def aminoacids (DNA):
     while index_count < count:
         position = codon_sequence[index_count]
         in_list = codon_list.index(position)
-        aminoacid = print_aa_list.append(aa_list[in_list])
+        aminoacid = aa_list.append(aa_list[in_list])
 
         index_count += 1
 
-    return (print_seq)
+    return (aa_list)
 
 #Determines complimentary DNA sequence
 
@@ -139,12 +139,12 @@ def seq_comp (sequence_raw):
         else:
             print_list.append("NO")
 
-        index_count += 1 #th th
+        index_count += 1 
 
-    return " ".join(print_list)
+    return "".join(print_list)
 
 #Calling functions
 print(GC_calculator(DNA_sequence))
-print(mRNA(DNA_sequence))
-print (aminoacids(DNA_sequence))
-print (seq_comp(DNA_sequence))
+print("mRNA sequence:", mRNA(DNA_sequence))
+print ("Aminoacid sequence",aminoacids(DNA_sequence))
+print ("Complimentary sequence:", seq_comp(DNA_sequence))
