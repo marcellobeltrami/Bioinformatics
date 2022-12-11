@@ -1,3 +1,5 @@
+#A bug has been found and it is been fixed
+
 DNA_sequence = (input("Enter DNA seqeuence: "))
 
 #Calculates GC content in a sequence
@@ -66,7 +68,7 @@ def mRNA(DNA):
 #Converts DNA sequence into aminoacid sequence
 
 def aminoacids (DNA):
-    sequence = list(DNA.upper())
+    sequence = DNA.upper()
     Seq_len = len(sequence)
 
     codon_list = ["ATT", "ATC", "ATA", "CGT", "CGC", "CGA", "CGG", "AGA", "AGG", "AAA", "AAG", "GAT", "GAC"
@@ -75,44 +77,24 @@ def aminoacids (DNA):
                   "ACA", "ACG", "CCT", "CCC", "CCA", "CCG", "GGT", "GGC", "GGA", "GGG"
         , "TAA", "TAG", "TGA", "GCT", "GCC", "GCA", "GCG", "ATG", "TGT", "TGC", "TTT",
                   "TTC", "GTT", "GTC", "GTA", "GTG", "CTT", "CTC", "CTA", "CTG", "TTA", "ACG"
-        , "TTG", ""]
+        , "TTG"]
 
     aa_list = ["I", "I", "I", "R", "R", "R", "R", "R", "R", "K", "K", "D", "D", "E", "E", "H", "H", "N", "N", "Q", "Q",
                "W", "Y", "Y", "S", "S", "S", "S", "S", "S", "T", "T", "T", "T", "P", "P", "P", "P", "G", "G", "G", "G",
                "*", "*", "*", "A", "A",
                "A", "A", "M", "C", "C", "F", "F", "V", "V", "V", "V", "L", "L", "L", "L", "L"
-        , "L"]
+        , "L", "L"]
 
-    index = 0
-    index_1 = 3
+    #Splits string in codons
+    codon_sequence = [sequence[i:i+3] for i in range(0, len(sequence), 3)]
 
-    
-
-    
-
-
-    aa_list = []
-
-    while index < Seq_len:
-        codon_sequence = []
-        Subs = slice(index, index_1)
-        xy = sequence[Subs]
-        list_join = "".join(xy)
-        print(codon_sequence)
-        codon_sequence.append(list_join)
-        index += 3
-        index_1 += 3
-
-    count = len(codon_sequence)
-    index_count = 0
+    aminoacids = []
 
     for i in codon_sequence:
         in_list = codon_list.index(i)
-        aminoacid = aa_list.append(aa_list[in_list])
+        aminoacids.append(aa_list[in_list])
 
-        index_count += 1
-
-    return (aa_list)
+    return ("".join(aminoacids))
 
 #Determines complimentary DNA sequence
 
