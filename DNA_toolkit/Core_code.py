@@ -61,12 +61,12 @@ def mRNA(DNA):
 
         index_count += 1  # th th
 
-    return (" ".join(print_list))
+    return ("".join(print_list))
 
 #Converts DNA sequence into aminoacid sequence
 
 def aminoacids (DNA):
-    sequence = DNA.upper()
+    sequence = list(DNA.upper())
     Seq_len = len(sequence)
 
     codon_list = ["ATT", "ATC", "ATA", "CGT", "CGC", "CGA", "CGG", "AGA", "AGG", "AAA", "AAG", "GAT", "GAC"
@@ -86,23 +86,28 @@ def aminoacids (DNA):
     index = 0
     index_1 = 3
 
-    codon_sequence = []
+    
+
+    
+
 
     aa_list = []
 
     while index < Seq_len:
+        codon_sequence = []
         Subs = slice(index, index_1)
         xy = sequence[Subs]
-        codon_sequence.append(xy)
+        list_join = "".join(xy)
+        print(codon_sequence)
+        codon_sequence.append(list_join)
         index += 3
         index_1 += 3
 
     count = len(codon_sequence)
     index_count = 0
 
-    while index_count < count:
-        position = codon_sequence[index_count]
-        in_list = codon_list.index(position)
+    for i in codon_sequence:
+        in_list = codon_list.index(i)
         aminoacid = aa_list.append(aa_list[in_list])
 
         index_count += 1
