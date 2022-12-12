@@ -92,8 +92,6 @@ def aminoacids (DNA):
 
 def seq_comp (sequence_raw):
     sequence = sequence_raw.upper()
-    
-
     split_sequence = list(sequence)  # input is split in single bases
 
     count = len(split_sequence)
