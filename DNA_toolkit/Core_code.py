@@ -1,5 +1,3 @@
-#A bug has been found and it is been fixed
-
 DNA_sequence = (input("Enter DNA seqeuence: "))
 
 #Calculates GC content in a sequence
@@ -35,11 +33,7 @@ def GC_calculator (DNA_sequence):
 
 def mRNA(DNA):
     sequence = DNA
-    Seq_len = len(sequence)
-
-    base_conversion = ["A", "C", "T", "G"]
-
-    index = 0
+   
 
     split_sequence = list(sequence)  # input is split in single bases
 
@@ -69,8 +63,6 @@ def mRNA(DNA):
 
 def aminoacids (DNA):
     sequence = DNA.upper()
-    Seq_len = len(sequence)
-
     codon_list = ["ATT", "ATC", "ATA", "CGT", "CGC", "CGA", "CGG", "AGA", "AGG", "AAA", "AAG", "GAT", "GAC"
         , "GAA", "GAG", "CAT", "CAC", "AAT", "AAC", "CAA", "CAG"
         , "TGG", "TAT", "TAC", "TCT", "TCC", "TCA", "TCG", "AGT", "AGC", "ACT", "ACC",
@@ -100,11 +92,7 @@ def aminoacids (DNA):
 
 def seq_comp (sequence_raw):
     sequence = sequence_raw.upper()
-    Seq_len = len(sequence)
-
-    base_conversion = ["A", "C", "T", "G"]
-
-    index = 0
+    
 
     split_sequence = list(sequence)  # input is split in single bases
 
