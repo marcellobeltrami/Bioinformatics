@@ -22,6 +22,8 @@ This allows to plot species given coordinates and distance range. Distance is ca
     -Mammal.txt (input file) and output.kml(output file) are sample data. 
 
     
+=======
+>>>>>>> 273c6dfa573034a8c56cd9621cf5e31649679efd
 
 Work in progress folder contains projects currently in development. They might not work due to bugs, flawed logic, etc... 
 feel free to browse them and contribute. 
