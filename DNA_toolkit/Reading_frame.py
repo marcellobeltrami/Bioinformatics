@@ -1,5 +1,11 @@
+#Takes input sequence
+sequence_raw = input("DNA sequence:")
+sequence = sequence_raw.upper()
+print("Computing....")
+
 # Determine open reading frame found in RNA and convert it into aminoacid 
 #Input DNA is taken
+
 def start_finder(DNA_seq): 
     n = 3
     start_nuc = 0 
@@ -18,7 +24,6 @@ def start_finder(DNA_seq):
                 last_nuc  +=1
         else: 
             return "Checked, no starting codon found!"
-
 #Takes a  sequence and finds the stop codon
 def stop_finder(DNA_seq):
     started_sequence = start_finder(DNA_seq)
@@ -29,8 +34,11 @@ def stop_finder(DNA_seq):
     for i in codon_sequence: 
         if i != "TAG" or "TAA" or "TGA": 
             ORF.append(i)
-        else: 
+        
+        else:
             break
+
+        break
     return "".join(ORF) 
 
 def aminoacids (DNA):
@@ -45,7 +53,7 @@ def aminoacids (DNA):
 
     aa_list = ["I", "I", "I", "R", "R", "R", "R", "R", "R", "K", "K", "D", "D", "E", "E", "H", "H", "N", "N", "Q", "Q",
                 "W", "Y", "Y", "S", "S", "S", "S", "S", "S", "T", "T", "T", "T", "P", "P", "P", "P", "G", "G", "G", "G",
-                "*", "*", "*", "A", "A",
+                "stop", "stop", "stop", "A", "A",
                 "A", "A", "M", "C", "C", "F", "F", "V", "V", "V", "V", "L", "L", "L", "L", "L"
         , "L", "L"]
 
@@ -60,14 +68,7 @@ def aminoacids (DNA):
 
     return ("".join(aminoacids))
 
-#Open input and output files
-results = open("ORF_output.txt","w")
-sequence = input("DNA sequence:")
-
-print("Computing....")
-
 # Lines in a file put in list and merged together
-
 DNA_seq_lis = []
 for line in sequence: 
     DNA_seq_lis.append(line.strip()) 
@@ -82,3 +83,4 @@ print ("Your reading frame is: ", ORF )
 
 print ("Aminoacid sequence is: ", "".join(aminoacids(ORF)))
 print("Done!")
+
