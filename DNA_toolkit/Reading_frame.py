@@ -30,15 +30,16 @@ def stop_finder(DNA_seq):
     #Determines codon sequence from started one
     codon_sequence = [started_sequence[i:i+3] for i in range(0, len(started_sequence),3)]
     ORF = []
+
     #Finds the stop codon 
+    # get rid of the nested loop
     for i in codon_sequence: 
         if i != "TAG" or "TAA" or "TGA": 
             ORF.append(i)
         
         else:
             break
-
-        break
+     
     return "".join(ORF) 
 
 def aminoacids (DNA):
@@ -83,4 +84,3 @@ print ("Your reading frame is: ", ORF )
 
 print ("Aminoacid sequence is: ", "".join(aminoacids(ORF)))
 print("Done!")
-

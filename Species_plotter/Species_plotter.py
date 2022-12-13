@@ -135,6 +135,11 @@ def BiodiversityCount (txt_file3, dist_km3, lat3, long3):
     return Unique_count
 
 # Functions called for Part 1,2,3.
-print("Animal count: ", LocationCount("Mammal.txt", 10.0, 54.988056,  -1.619444))
-PrintLocation( "Mammal.txt", 15.0,  51.452884 ,  -0.973906 )
-print("Unique species: ", BiodiversityCount("Mammal.txt" , 25.0, 51.508129 , -0.128005))
+coordinates_file = input("File path containing names and coordinates:")
+latitude = float(input("Input latitude value:"))
+longitude = float(input("Input longitude value:"))
+km_of_area = float(input("Input are size in km value:"))
+
+print("Animal count: ", LocationCount(coordinates_file, km_of_area, latitude, longitude))
+PrintLocation( coordinates_file, km_of_area, latitude, longitude)
+print("Unique species: ", BiodiversityCount(coordinates_file, km_of_area, latitude, longitude))

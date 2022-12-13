@@ -1,6 +1,6 @@
 from Bio import SeqIO
 
-#Deals with files inputted 
+#Deals with fasta files inputted and stores sequence in a list
 sequence_filename1 = input("fasta1 file path:")
 sequence_filename2 = input("fasta2 file path:")
 
