@@ -1,6 +1,3 @@
-# REFERENCES
-# https://note.nkmk.me/en/python-list-clear-pop-remove-del/ [Accessed: 01/03/2022 ]
-# https://realpython.com/python-sets/ [Accessed: 06/03/2022]
 
 import math
 # Calculates distance given two sets of coordinates
