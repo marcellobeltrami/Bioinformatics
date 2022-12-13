@@ -21,6 +21,7 @@ DNA toolkit contains:
 This allows to plot species given coordinates and distance range. Distance is calculated using the coordinated provided. 
     -Mammal.txt (input file) and output.kml(output file) are sample data. 
 
+<<<<<<< HEAD
     
 =======
 >>>>>>> 273c6dfa573034a8c56cd9621cf5e31649679efd
