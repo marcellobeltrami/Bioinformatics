@@ -1,1 +1,0 @@
-prm_sequence = input("Please input your promoter sequence:")
