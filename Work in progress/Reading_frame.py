@@ -6,14 +6,13 @@ print("Computing....")
 # Determine open reading frame found in RNA and convert it into aminoacid 
 #Input DNA is taken
 
-def start_finder(DNA_seq): 
-    n = 3
+def start_finder(DNA_seq, n_lenght): 
     start_nuc = 0 
     last_nuc = 2
     Nucleotide_list = list(DNA_seq)
     for i in Nucleotide_list: 
         if start_nuc < len(DNA_seq): 
-            my_list_2 = [DNA_seq[i:i+n] for i in range(start_nuc, len(DNA_seq), n)]
+            my_list_2 = [DNA_seq[i:i+n] for i in range(start_nuc, len(DNA_seq), n_lenght)]
             #Upon match reading frame is printed
             if my_list_2[0] == "AUG" or "ATG": 
                 return  "".join(my_list_2)
@@ -25,10 +24,10 @@ def start_finder(DNA_seq):
         else: 
             return "Checked, no starting codon found!"
 #Takes a  sequence and finds the stop codon
-def stop_finder(DNA_seq):
-    started_sequence = start_finder(DNA_seq)
+def stop_finder(DNA_seq, n):
+    started_sequence = start_finder(DNA_seq, 3)
     #Determines codon sequence from started one
-    codon_sequence = [started_sequence[i:i+3] for i in range(0, len(started_sequence),3)]
+    codon_sequence = [started_sequence[i:i+3] for i in range(0, len(started_sequence),n)]
     ORF = []
 
     #Finds the stop codon 
@@ -77,7 +76,7 @@ DNA_sequence = "".join(DNA_seq_lis)
 
 Index_2 = 1
 Index_3 = 2
-ORF = stop_finder(DNA_sequence)
+ORF = stop_finder(DNA_sequence, 3)
 
 #Functions are called
 print ("Your reading frame is: ", ORF )
