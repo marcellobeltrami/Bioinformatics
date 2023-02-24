@@ -21,6 +21,7 @@ DNA toolkit contains:
 This allows to plot species given coordinates and distance range. Distance is calculated using the coordinated provided. 
     -Mammal.txt (input file) and output.kml(output file) are sample data. 
 
+[]Sequence distance is a py script allowing to calculate the distance between an unknown sequence against a list of sequences. When applied to fictitious data, This script has been used to determine the closest sequence, aiding in determining the possible spreader between the two countries. 
 
 Work in progress folder contains projects currently in development. They might not work due to bugs, flawed logic, etc... 
 feel free to browse them and contribute. 
