@@ -62,7 +62,17 @@ def mRNA(DNA):
 #Converts DNA sequence into aminoacid sequence
 
 def aminoacids (DNA):
-    sequence = DNA.upper()
+    RNA_nucleotides = list(DNA)
+    DNA_list = []
+    
+    for i in RNA_nucleotides: 
+        if i == "U": 
+            DNA_list.append("T")
+        else: 
+            DNA_list.append(i)
+
+    sequence= "".join(DNA_list)
+
     codon_list = ["ATT", "ATC", "ATA", "CGT", "CGC", "CGA", "CGG", "AGA", "AGG", "AAA", "AAG", "GAT", "GAC"
         , "GAA", "GAG", "CAT", "CAC", "AAT", "AAC", "CAA", "CAG"
         , "TGG", "TAT", "TAC", "TCT", "TCC", "TCA", "TCG", "AGT", "AGC", "ACT", "ACC",
@@ -118,6 +128,4 @@ def seq_comp (sequence_raw):
 
 #Calling functions
 print(GC_calculator(DNA_sequence))
-print("mRNA sequence:", mRNA(DNA_sequence))
 print ("Aminoacid sequence",aminoacids(DNA_sequence))
-print ("Complimentary sequence:", seq_comp(DNA_sequence))

@@ -35,7 +35,7 @@ def LoadSingleSequence(FileName):
 	# Load All records, eventhough only the first is needed
 	RecordData = LoadRecords(FileName)
 	
-	# only return the seqince from the first record. 
+	# only return the sequence from the first record. 
 	return RecordData[0][2]
 
 # Load all records from "Human-Covid19.txt" into a list of list, called Records
