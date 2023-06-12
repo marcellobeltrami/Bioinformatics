@@ -1,0 +1,17 @@
+INFO  [RepairJobTask:3] 2023-05-05 15:33:53,519  SyncTask.java:66 - [repair #7a261710-eb49-11ed-af96-d5549f9252f5] Endpoints /10.156.13.8 and /10.156.13.7 are consistent for contenzioso_entita
+INFO  [RepairJobTask:2] 2023-05-05 15:33:53,519  SyncTask.java:66 - [repair #7a261710-eb49-11ed-af96-d5549f9252f5] Endpoints /10.156.13.8 and /10.156.13.9 are consistent for contenzioso_entita
+INFO  [Repair#2584:1] 2023-05-05 15:33:53,519  RepairJob.java:160 - [repair #7a261710-eb49-11ed-af96-d5549f9252f5] contenzioso_entita is fully synced
+INFO  [Repair#2584:1] 2023-05-05 15:33:53,519  RepairJob.java:206 - [repair #7a261710-eb49-11ed-af96-d5549f9252f5] Requesting merkle trees for inverted_entita (to [/10.156.13.8, /10.156.13.9, /10.156.13.7])
+INFO  [AntiEntropyStage:1] 2023-05-05 15:33:53,521  RepairSession.java:181 - [repair #7a261710-eb49-11ed-af96-d5549f9252f5] Received merkle tree for inverted_entita from /10.156.13.8
+INFO  [AntiEntropyStage:1] 2023-05-05 15:33:53,521  RepairSession.java:181 - [repair #7a261710-eb49-11ed-af96-d5549f9252f5] Received merkle tree for inverted_entita from /10.156.13.7
+INFO  [AntiEntropyStage:1] 2023-05-05 15:33:53,521  RepairSession.java:181 - [repair #7a261710-eb49-11ed-af96-d5549f9252f5] Received merkle tree for inverted_entita from /10.156.13.9
+INFO  [RepairJobTask:3] 2023-05-05 15:33:53,521  SyncTask.java:66 - [repair #7a261710-eb49-11ed-af96-d5549f9252f5] Endpoints /10.156.13.8 and /10.156.13.9 are consistent for inverted_entita
+INFO  [RepairJobTask:1] 2023-05-05 15:33:53,521  SyncTask.java:66 - [repair #7a261710-eb49-11ed-af96-d5549f9252f5] Endpoints /10.156.13.8 and /10.156.13.7 are consistent for inverted_entita
+INFO  [RepairJobTask:2] 2023-05-05 15:33:53,521  SyncTask.java:66 - [repair #7a261710-eb49-11ed-af96-d5549f9252f5] Endpoints /10.156.13.9 and /10.156.13.7 are consistent for inverted_entita
+INFO  [Repair#2584:1] 2023-05-05 15:33:53,522  RepairJob.java:160 - [repair #7a261710-eb49-11ed-af96-d5549f9252f5] inverted_entita is fully synced
+INFO  [Repair#2584:1] 2023-05-05 15:33:53,522  RepairJob.java:206 - [repair #7a261710-eb49-11ed-af96-d5549f9252f5] Requesting merkle trees for inverted_pee_per_ext (to [/10.156.13.8, /10.156.13.9, /10.156.13.7])
+INFO  [AntiEntropyStage:1] 2023-05-05 15:33:53,523  RepairSession.java:181 - [repair #7a261710-eb49-11ed-af96-d5549f9252f5] Received merkle tree for inverted_pee_per_ext from /10.156.13.8
+INFO  [AntiEntropyStage:1] 2023-05-05 15:33:53,527  RepairSession.java:181 - [repair #7a261710-eb49-11ed-af96-d5549f9252f5] Received merkle tree for inverted_pee_per_ext from /10.156.13.7
+INFO  [AntiEntropyStage:1] 2023-05-05 15:33:53,528  RepairSession.java:181 - [repair #7a261710-eb49-11ed-af96-d5549f9252f5] Received merkle tree for inverted_pee_per_ext from /10.156.13.9
+INFO  [RepairJobTask:2] 2023-05-05 15:33:53,529  SyncTask.java:66 - [repair #7a261710-eb49-11ed-af96-d5549f9252f5] Endpoints /10.156.13.9 and /10.156.13.7 are consistent for inverted_pee_per_ext
+I
