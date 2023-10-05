@@ -1,30 +1,37 @@
+def Bases_count(DNA): 
+    bases = {"A":0, "T":0, "G":0, "C":0} 
+
+    bases["A"] = DNA.count("A")
+    bases["T"] = DNA.count("T")
+    bases["G"] = DNA.count("G")
+    bases["C"] = DNA.count("C")
+    return bases
+
+
 def Base_perc(sequence):
     genetic_code_raw = sequence
     genetic_code = list(genetic_code_raw.upper())
 
     # Base countpython
-    A_base = int(genetic_code.count("A"))
-    C_base = int(genetic_code.count("C"))
-    T_base = int(genetic_code.count("T"))
-    G_base = int(genetic_code.count("G"))
-    Total = int(len(genetic_code))
+    bases_dict = Bases_count(sequence)
 
-    # Base calculation
-    A = str(round((A_base / Total)*100))
-    C = str(round((C_base / Total)*100))
-    T = str(round((T_base / Total)*100))
-    G = str(round((G_base / Total)*100))
-    G_C = ((C_base / Total)*100) + ((G_base / Total)*100)
+    output_dict = {"A":0, "T":0, "G":0, "C":0, "G+C":0}
+    # Base calculation and addition to output dictionary
+    output_dict["A"] = float((bases_dict["A"] / Total)
+    output_dict["T"] = float(bases_dict["T"] / Total)
+    output_dict["G"] = float(bases_dict["G"]/ Total)
+    output_dict["C"] = float((bases_dict["C"]/ Total)
+    output_dict["G+C"] = output_dict["G"] + output_dict["C"]
+
     
 
-    # Output
+    # Outputs a dictionary with values for each base. 
     #print("A: " + A + " %")
     #print("C: " + C + " %")
     #print("T: " + T + " %")
     #print("G: " + G + " %")
-    #print("G-C: " + G_C + " %")
-    #print("A-T: " + A_T + " %")
-    return G_C
+
+    return percentage_dict
 
 
     
