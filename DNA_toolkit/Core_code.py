@@ -25,7 +25,7 @@ def GC_calculator (DNA_sequence):
 
     # Outputs a G_C value (not multiplied by 100)
 
-    return output_dict["G+C"]
+    return (output_dict["G+C"])
 
 
 #Converts DNA sequence into RNA sequence
