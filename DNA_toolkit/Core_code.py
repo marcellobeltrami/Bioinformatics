@@ -2,6 +2,7 @@ DNA_sequence = (input("Enter DNA sequence: "))
 
 #Calculates GC content in a sequence
 def GC_calculator (DNA_sequence):
+
     genetic_code_raw = DNA_sequence
     genetic_code1 = genetic_code_raw.upper()
     genetic_code = genetic_code1.replace(" ","")
@@ -13,14 +14,13 @@ def GC_calculator (DNA_sequence):
     bases_dict["T"] = genetic_code.count("T")
     bases_dict["G"] = genetic_code.count("G")
     bases_dict["C"] = genetic_code.count("C")
-
     # Base calculation and addition to output dictionary
     output_dict = {"A":0, "T":0, "G":0, "C":0, "G+C":0}
     
-    output_dict["A"] = float((bases_dict["A"] / Total)
-    output_dict["T"] = float(bases_dict["T"] / Total)
-    output_dict["G"] = float(bases_dict["G"]/ Total)
-    output_dict["C"] = float((bases_dict["C"]/ Total)
+    output_dict["A"] = float((bases_dict["A"] / len(genetic_code)))
+    output_dict["T"] = float(bases_dict["T"] / len(genetic_code))
+    output_dict["G"] = float(bases_dict["G"]/ len(genetic_code))
+    output_dict["C"] = float(bases_dict["C"]/ len(genetic_code))
     output_dict["G+C"] = output_dict["G"] + output_dict["C"]
 
     # Outputs a G_C value (not multiplied by 100)
