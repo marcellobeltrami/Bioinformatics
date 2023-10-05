@@ -31,7 +31,7 @@ def Base_perc(sequence):
     #print("T: " + T + " %")
     #print("G: " + G + " %")
 
-    return percentage_dict
+    return output_dict
 
 
     
