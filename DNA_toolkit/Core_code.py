@@ -9,10 +9,10 @@ def GC_calculator (DNA_sequence):
     # Base count
     bases_dict = {"A":0, "T":0, "G":0, "C":0} 
 
-    bases["A"] = genetic_code.count("A")
-    bases["T"] = genetic_code.count("T")
-    bases["G"] = genetic_code.count("G")
-    bases["C"] = genetic_code.count("C")
+    bases_dict["A"] = genetic_code.count("A")
+    bases_dict["T"] = genetic_code.count("T")
+    bases_dict["G"] = genetic_code.count("G")
+    bases_dict["C"] = genetic_code.count("C")
 
     # Base calculation and addition to output dictionary
     output_dict = {"A":0, "T":0, "G":0, "C":0, "G+C":0}
