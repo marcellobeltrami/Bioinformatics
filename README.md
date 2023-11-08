@@ -18,7 +18,7 @@ and translated to aminoacid sequence.
 
 **Sequence_identity**: calculates identity percentage between two sequences in two fasta files. **biopython library required.
 
-##### **Species plotting**
+### **Species plotting**
 > **Species_plotter** a py to kml compiler. This allows to plot species given coordinates and distance range. Distance is calculated using the coordinated provided. 
     -Mammal.txt (input file) and output.kml(output file) are sample data. 
 
