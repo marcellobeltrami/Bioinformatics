@@ -1,4 +1,4 @@
-# Bioinformatics
+#Bioinformatics
  This a repository for my bioinformatics tools. They are a collection of solutions I developed during coding practices 
  on websites such as Rosalind and assignment. 
 
