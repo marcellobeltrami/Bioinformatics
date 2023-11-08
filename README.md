@@ -3,7 +3,7 @@
 This a repository for my bioinformatics tools. They are a collection of solutions I developed during coding practices 
  on websites such as Rosalind and assignments. 
 
-##### **DNA toolkit**
+### **DNA toolkit**
 **Core code**: 
     -GC content calculator
     -DNA-->mRNA 
