@@ -5,10 +5,14 @@ This a repository for my bioinformatics tools. They are a collection of solution
 
 ### **DNA toolkit**
 **Core code**: 
-    -GC content calculator
-    -DNA-->mRNA 
-    -DNA-->protein
-    -Complementary DNA sequence 
+  -GC content calculator: calculates GC content of a string
+  
+   -DNA-->mRNA: converts a DNA string into mRNA. 
+   
+   -DNA-->protein: converts DNA into proteins. 
+   
+   -Complementary DNA sequence: converts DNA sequence in its complementary
+    
 **Base calculator**: finds base percentage in a DNA strand
 
 **Mutation_quantifier**: finds H-value given two DNA strands
