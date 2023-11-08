@@ -3,7 +3,7 @@
 This a repository for my bioinformatics tools. They are a collection of solutions I developed during coding practices 
  on websites such as Rosalind and assignments. 
 
-### **DNA toolkit**
+### **DNA toolkit** 🔧
 **Core code**: 
   -GC content calculator: calculates GC content of a string
   
@@ -22,12 +22,13 @@ and translated to aminoacid sequence.
 
 **Sequence_identity**: calculates identity percentage between two sequences in two fasta files. **biopython library required.
 
-### **Species plotting**
+### **Species plotting** 🧭
 **Species_plotter** a py to kml compiler. This allows to plot species given coordinates and distance range. Distance is calculated using the coordinated provided. 
     -Mammal.txt (input file) and output.kml(output file) are sample data. 
 
 **Sequence distance** is a py script allowing to calculate the distance between an unknown sequence against a list of sequences. When applied to fictitious data, This script has been used to determine the closest sequence, aiding in determining the possible spreader between the two countries. 
 
-:warning:
+Work in progress :warning:
+
 Work in progress folder contains projects currently in development. They might not work due to bugs, flawed logic, etc... 
 feel free to browse them and contribute. 
